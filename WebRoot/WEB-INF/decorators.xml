@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<decorators defaultdir="/WEB-INF/index/decorators">
+	<excludes>
+    </excludes>
+    
+    <decorator name="index" page="decorator_default.jsp">
+    	
+    	<pattern>/*</pattern>
+    
+    	<!--  示例
+        <pattern>/firstpage.jsp*</pattern>
+        <pattern>/ranking.jsp*</pattern>
+        <pattern>/login.jsp*</pattern>
+        <pattern>/error.jsp*</pattern>
+        <pattern>/WEB-INF/index/register/register.jsp*</pattern>
+        -->
+        
+    </decorator>
+    
+    
+</decorators>

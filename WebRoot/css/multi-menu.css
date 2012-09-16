@@ -1,0 +1,51 @@
+/**************************************************
+ * 手风琴效果样式
+ * 30.6.2008
+ **************************************************
+ * msn:danxinju@hotmail.com
+ * author:xj.d
+ **************************************************/
+.panel {	/*版面样式*/
+	width:238px;
+	font-size:14px;
+}
+.panel h3 {		/*标题样式*/
+	height:25px;
+	padding-left:10px;
+	margin:0;
+
+	font-weight:lighter;
+	line-height:24px;
+	font-size:14px;
+	cursor:pointer;
+}
+.panel div {	/*内容样式*/
+	margin-left:2px;
+	border:1px solid #E8E8E8;
+	border-bottom:0px solid #fff;
+	overflow:hidden;
+	background:#FCFCFC;
+}
+.gray-top {		/*顶部未展开*/
+	background:url(../images/gray-top.gif);
+}
+.gray-bottom {	/*底部未展开*/
+	background:url(../images/multi-menu/gray-bottom.gif);
+}
+.gray {		/*中部未展开*/
+	background:url(../images/multi-menu/gray.gif);
+}
+.deep-top {		/*顶部已展开*/
+	background:url(../images/multi-menu/deep-top.gif);
+	color:#fff;
+}
+.deep-bottom {	/*底部已展开*/
+	background:url(../images/multi-menu/deep-bottom.gif);
+}
+.deep {		/*中部已展开*/
+	background:url(../images/multi-menu/deep.gif);
+	color:#fff;
+}
+.panel-bottom {	/*最后一列向上浮动20个像素*/
+	margin-bottom:-10px;
+}

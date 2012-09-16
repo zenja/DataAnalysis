@@ -1,0 +1,279 @@
+body {
+	background: url(../images/bg.gif) repeat-x top #e8dec4;
+	margin: 0px;
+	padding: 0px;
+	font: 10px verdana, arial, helvetica;
+	color: #000;
+}
+
+p {
+	text-align: justify;
+	line-height: 15px;
+	padding: 0px 0 5px 0;
+}
+
+p.left_arrow {
+	text-align: justify;
+	line-height: 15px;
+	padding: 0px 0 5px 60px;
+	background: url(../images/tool.gif) no-repeat left top;
+}
+
+.clear {
+	clear: both;
+}
+
+#main_container {
+	width: 900px;
+	height: auto;
+	margin: auto;
+	background: url(../images/header_bg.jpg) no-repeat top center;
+}
+
+.center_content {
+	width: 865px;
+	padding: 0px;
+	margin: auto;
+}
+
+#header {
+	width: 865px;
+	height: 268px;
+	margin: auto;
+}
+
+#logo {
+	padding: 17px 0 0 5px;
+	float: left;
+}
+
+a.testimonial {
+	float: right;
+	padding: 0px;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*----------------------menu-------------------------*/
+#menu {
+	float: right;
+	padding: 35px 30px 0 0;
+}
+
+#menu ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+}
+
+#menu ul li {
+	list-style: none;
+	display: inline;
+	float: left;
+	width: auto;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#menu ul li a {
+	float: left;
+	text-decoration: none;
+	padding: 0px 4px 0 4px;
+	margin: 0px 8px 0 8px;
+	color: #fff;
+	text-align: center;
+}
+
+#menu ul li a:hover {
+	text-decoration: none;
+	color: #fff;
+	text-decoration: line-through;
+}
+
+#menu ul li a.current {
+	float: left;
+	text-decoration: none;
+	padding: 0px 4px 0 4px;
+	color: #fff;
+	margin: 0px 8px 0 8px;
+	text-decoration: line-through;
+}
+
+/*-----------------main content----------------------------*/
+.main_content {
+	width: 865px;
+	height: auto;
+	margin: auto;
+	padding: 0 0 30px 0;
+	background-color: #FFFFFF;
+}
+
+.main_content_top {
+	width: 865px;
+	height: 16px;
+	background: url(../images/main_content_top.gif) no-repeat center top;
+}
+
+
+p.text_content {
+	width: 135px;
+	float: left;
+	text-align: left;
+	padding: 5px 10px 0 15px;
+	color: #fff;
+	line-height: 15px;
+}
+
+a.read_more {
+	padding: 10px 0 0 0;
+}
+
+.title {
+	font-size: 18px;
+	color: #000000;
+	padding: 10px 0 0 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.contact_icon {
+	width: 49px;
+	height: 44px;
+	float: left;
+	background: url(../images/icon4.gif) no-repeat center;
+}
+
+.services_icon {
+	width: 49px;
+	height: 48px;
+	float: left;
+	background: url(../images/icon5.gif) no-repeat center;
+}
+
+.news_content {
+	width: 310px;
+	float: left;
+	text-align: justify;
+	line-height: 15px;
+	padding: 0 0 0 10px;
+}
+
+img.photo {
+	padding: 10px 0 0 0;
+}
+
+
+
+.project_tab {
+	float: left;
+	width: auto;
+	padding: 15px 0 20px 0;
+}
+
+a.yellow {
+	font-size: 14px;
+	color: #6D4930;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.project_thumb {
+	width: 133px;
+	height: 103px;
+	float: left;
+	text-align: center;
+	background: url(../images/thumb_bg.gif) no-repeat center;
+	padding: 15px 0 0 0;
+}
+
+p.project {
+	width: 250px;
+	float: left;
+	text-align: justify;
+	line-height: 21px;
+	padding: 2px 0 0 10px;
+	margin: 0px;
+}
+
+/*-----------------------contact_form-------------------*/
+#contact_form {
+	width: 370px;
+	height: auto;
+	padding: 20px 0 0 20px;
+}
+
+.form_row {
+	float: left;
+	padding: 7px 0 7px 0;
+}
+
+label {
+	width: 60px;
+	float: left;
+	padding: 3px 5px 0 0;
+	color: #175b6c;
+	text-align: right;
+	font-weight: bold;
+}
+
+input.contact_input {
+	width: 293px;
+	height: 24px;
+	float: left;
+	border: 1px #BFB28F solid;
+	background-color: #E8DEC4;
+	color: #6F664C;
+}
+
+textarea.contact_textarea {
+	width: 293px;
+	height: 80px;
+	float: left;
+	border: 1px #BFB28F solid;
+	background-color: #E8DEC4;
+	color: #6F664C;
+}
+
+input.send_message {
+	float: right;
+	padding: 10px 10px 0 0;
+}
+
+/*-----------------------------footer------------------*/
+#footer {
+	clear: both;
+	width: auto;
+	height: 50px;
+	color: #0c9cc9;
+}
+
+.copyright {
+	float: right;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.footer_links {
+	float: left;
+	padding-right: 15px;
+	padding-top: 13px;
+}
+
+#footer a {
+	text-decoration: none;
+	color: #2A1C11;
+	padding-left: 10px;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+	color: #2A1C11;
+}

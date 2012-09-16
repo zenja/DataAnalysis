@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<constant name="structs.il8n.encoding" value="UTF-8" />
+	<constant name="structs.multipart.saveDir" value="C:\" />
+	<package name="user" extends="struts-default">
+		
+		<action name="test" class="testAction">
+			<result name="success">/test.jsp</result>
+		</action>
+		
+		<action name="statistics" class="statisticsAction" method="index">
+			<result name="success">/statistics-results.jsp</result>
+			<result name="input_error">/input-error.jsp</result>
+		</action>
+		
+		<action name="linearProgramming" class="linearProgrammingAction" method="index">
+			<result name="success">/linear-programming-results.jsp</result>
+			<result name="input_error">/input-error.jsp</result>
+		</action>
+
+	</package>
+
+</struts>
