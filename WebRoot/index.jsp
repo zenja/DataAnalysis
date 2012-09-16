@@ -42,7 +42,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<input type="file" name="file">
 			<br />
 			<input type="submit" value="upload">
-			<p><a href="<%=request.getContextPath()%>/download/test-data/lpformat-example.txt" target="_blank">Download Test Data</a></p>
+			<p>
+			<a href="<%=request.getContextPath()%>/download/test-data/lpformat-example.txt" target="_blank">Download Test Data</a>
+			<br>
+			<a href="<%=request.getContextPath()%>/interactive-linear-programming.jsp">Interactive Calculator</a>
+			</p>
 		</fieldset>
 	</form>
 	

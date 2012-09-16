@@ -1,5 +1,5 @@
 package org.zenja.dataanalysis.action.enums;
 
 public enum InputType {
-	FILE, PLAIN_TEXT
+	FILE, PLAIN_TEXT, MULTI_FIELDS
 }

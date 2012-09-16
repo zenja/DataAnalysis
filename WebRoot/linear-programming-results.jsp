@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ page import="org.apache.commons.lang.StringUtils" %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <%
 String path = request.getContextPath();
@@ -11,9 +12,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<base href="<%=basePath%>">
 
 	<title>Linear Programming Results</title>
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
 
 </head>
 
@@ -28,6 +26,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</s:iterator>
 	) 
 	we can get the target value: ${ resultValue }
-	<p>
+	</p>
 </body>
 </html>
