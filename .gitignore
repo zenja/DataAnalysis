@@ -17,6 +17,9 @@
 *.un~
 Session.vim
 
+# Struts ignores
+.struts.mex
+
 # Eclipse ignores - general
 .project
 .metadata

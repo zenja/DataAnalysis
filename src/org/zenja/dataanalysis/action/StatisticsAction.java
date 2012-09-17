@@ -157,8 +157,8 @@ public class StatisticsAction extends ActionSupport {
 			standardDeviation = stats.getStandardDeviation();
 			median = stats.getPercentile(50);
 			sum = stats.getSum();
-			stats.getSkewness();
-			stats.getKurtosis();
+			skewness = stats.getSkewness();
+			kurtosis = stats.getKurtosis();
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

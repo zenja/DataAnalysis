@@ -14,13 +14,21 @@
 		<action name="statistics" class="statisticsAction" method="index">
 			<result name="success">/statistics-results.jsp</result>
 			<result name="input_error">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="linearProgramming" class="linearProgrammingAction" method="index">
 			<result name="success">/linear-programming-results.jsp</result>
 			<result name="input_error">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
 		</action>
-
+		
+		<action name="simpleRegression" class="simpleRegressionAction" method="index">
+			<result name="success">/simple-regression-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>

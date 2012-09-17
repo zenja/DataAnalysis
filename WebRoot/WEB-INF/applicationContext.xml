@@ -15,7 +15,7 @@
 	<!-- configure sessionFactory -->
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
-		<!-- 将dataSource注入到sessionFactory中 -->
+		<!-- inject dataSource into sessionFactory -->
 		<property name="dataSource" ref="dataSource"></property>
 		<property name="hibernateProperties">
 			<props>
@@ -53,6 +53,10 @@
 	</bean>
 	
 	<bean id="linearProgrammingAction" class="org.zenja.dataanalysis.action.LinearProgrammingAction"
+		scope="prototype">
+	</bean>
+	
+	<bean id="simpleRegressionAction" class="org.zenja.dataanalysis.action.SimpleRegressionAction"
 		scope="prototype">
 	</bean>
 
