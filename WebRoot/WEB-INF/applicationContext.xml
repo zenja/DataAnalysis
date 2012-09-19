@@ -59,5 +59,9 @@
 	<bean id="simpleRegressionAction" class="org.zenja.dataanalysis.action.SimpleRegressionAction"
 		scope="prototype">
 	</bean>
+	
+	<bean id="kMeansAction" class="org.zenja.dataanalysis.action.KMeansAction"
+		scope="prototype">
+	</bean>
 
 </beans>

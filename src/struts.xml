@@ -29,6 +29,12 @@
 			<result name="error">/error.jsp</result>
 		</action>
 		
+		<action name="kMeans" class="kMeansAction" method="index">
+			<result name="success">/kmeans-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>

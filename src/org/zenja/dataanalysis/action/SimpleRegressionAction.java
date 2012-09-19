@@ -308,7 +308,7 @@ public class SimpleRegressionAction extends ActionSupport {
 			e.printStackTrace();
 			return ERROR;
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			// Default Error Handling
 			e.printStackTrace();
 			return ERROR;
 		} finally {

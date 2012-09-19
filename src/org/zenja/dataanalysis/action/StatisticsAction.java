@@ -163,6 +163,9 @@ public class StatisticsAction extends ActionSupport {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (Exception e) {
+			// Default Error Handling
+			return ERROR;
 		} finally {
 			try {
 				if (null != br)

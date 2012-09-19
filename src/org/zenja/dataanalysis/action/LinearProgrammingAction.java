@@ -183,6 +183,17 @@ public class LinearProgrammingAction extends ActionSupport {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return ERROR;
+		} catch (Exception e) {
+			// Default Error Handling
+			return ERROR;
+		} finally {
+			try {
+				if (null != br)
+					br.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+				return ERROR;
+			}
 		}
 	}
 	
