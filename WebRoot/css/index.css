@@ -1,11 +1,39 @@
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+}
+
 label {
 	display: block;
 	float: left;
 	clear: left;
-	width: 150px;	
+	width: 180px;	
+}
+
+legend {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+header {
+	text-align: center;
+	vertical-align: middle;
 }
 
 .form-section {
-	width: 60%;
-	margin: 10px 0 10px 0;
+	margin: 15px 0 15px 0;
+}
+
+#page-wrapper {
+	width: 75%;
+	min-width: 600px;
+	margin: 0 auto;	
+}
+
+#data-gobble-logo-img {
+	width: 80px;
+	height: 80px;	
 }

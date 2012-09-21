@@ -63,5 +63,9 @@
 	<bean id="kMeansAction" class="org.zenja.dataanalysis.action.KMeansAction"
 		scope="prototype">
 	</bean>
+	
+	<bean id="neuralNetworkAction" class="org.zenja.dataanalysis.action.NeuralNetworkAction"
+		scope="prototype">
+	</bean>
 
 </beans>

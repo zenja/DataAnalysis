@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NeuralNetworkData>
+	<Name>XOR operator neural network example</Name>
+	<TrainingDataList>
+		<DataItem>
+			<Input>0.0,0.0</Input>
+			<Output>1.0</Output>
+		</DataItem>
+		<DataItem>
+			<Input>1.0,0.0</Input>
+			<Output>0.0</Output>
+		</DataItem>
+		<DataItem>
+			<Input>0.0,1.0</Input>
+			<Output>0.0</Output>
+		</DataItem>
+		<DataItem>
+			<Input>1.0,1.0</Input>
+			<Output>0.0</Output>
+		</DataItem>
+	</TrainingDataList>
+	<NetworkLayerList>
+		<Layer>
+			<ActivationFuncType>ActivationSigmoid</ActivationFuncType>
+			<HasBias>1</HasBias>
+			<NeuronCount>2</NeuronCount>
+		</Layer>
+		<Layer>
+			<ActivationFuncType>ActivationSigmoid</ActivationFuncType>
+			<HasBias>1</HasBias>
+			<NeuronCount>4</NeuronCount>
+		</Layer>
+		<Layer>
+			<ActivationFuncType>ActivationSigmoid</ActivationFuncType>
+			<HasBias>1</HasBias>
+			<NeuronCount>1</NeuronCount>
+		</Layer>
+	</NetworkLayerList>
+	<TrainingErrorThreshold>0.01</TrainingErrorThreshold>
+</NeuralNetworkData>

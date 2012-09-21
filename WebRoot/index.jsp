@@ -13,78 +13,104 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 
 <body>
-	<h1>Data Analysis System Prototype</h1>
-	
-	<section class="form-section">
-		<form action="statistics.action" method="post" enctype="multipart/form-data">
-			<fieldset>
-				<legend>Statistics</legend>
-				<label>Input File:</label>
-				<input type="file" name="file" />
-				<br />
-				<input type="submit" value="upload" />
-				<p><a href="<%=request.getContextPath()%>/download/test-data/testdata-statistics.txt" target="_blank">Download Test Data</a></p>
-			</fieldset>
-		</form>
+	<section id="page-wrapper">
+		
+		<header>
+		<h1>
+		<img id="data-gobble-logo-img" alt="logo" src="<%=request.getContextPath()%>/images/data-gobble-logo.png">
+		DataGobble Analysis System
+		</h1>
+		</header>
+		
+		
+		<section class="form-section">
+			<form action="statistics.action" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<legend>Statistics</legend>
+					<label>Input File:</label>
+					<input type="file" name="file" />
+					<br />
+					<input type="submit" value="upload" />
+					<p><a href="<%=request.getContextPath()%>/download/test-data/testdata-statistics.txt" target="_blank">Download Test Data</a></p>
+				</fieldset>
+			</form>
+		</section>
+		
+		<section class="form-section">
+			<form action="linearProgramming.action" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<legend>Linear Programming</legend>
+					<input type="hidden" name="inputType" value="FILE">
+					<label>Input File:</label>
+					<input type="file" name="file">
+					<br />
+					<input type="submit" value="upload">
+					<p>
+					<a href="<%=request.getContextPath()%>/download/test-data/lpformat-example.txt" target="_blank">Download Test Data</a>
+					<br>
+					<a href="<%=request.getContextPath()%>/interactive-linear-programming.jsp">Interactive Calculator</a>
+					</p>
+				</fieldset>
+			</form>
+		</section>
+		
+		<section class="form-section">
+			<form action="simpleRegression.action" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<legend>Simple Regression</legend>
+					<input type="hidden" name="inputType" value="FILE">
+					<label>Input File:</label>
+					<input type="file" name="file">
+					<br />
+					<input type="submit" value="upload">
+					<p>
+					<a href="<%=request.getContextPath()%>/download/test-data/testdata-simple-regression.txt" target="_blank">Download Test Data</a>
+					<br>
+					</p>
+				</fieldset>
+			</form>
+		</section>
+		
+		<section class="form-section">
+			<form action="kMeans.action" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<legend>K-Means Clustering</legend>
+					<input type="hidden" name="inputType" value="FILE">
+					<label>Input File:</label>
+					<input type="file" name="file">
+					<br />
+					<label>Number of clusters:</label>
+					<input type="text" name="numClusters" value="2">
+					<br>
+					<label>Number of clusters:</label>
+					<input type="text" name="numIterations" value="100">
+					<br>
+					<input type="submit" value="upload">
+					<p>
+					<a href="<%=request.getContextPath()%>/download/test-data/testdata-kmeans.txt" target="_blank">Download Test Data</a>
+					<br>
+					</p>
+				</fieldset>
+			</form>
+		</section>
+		
+		<section>
+			<form action="neuralNetwork"  method="post" enctype="multipart/form-data">
+				<fieldset>
+					<legend>Neural Network</legend>
+					<input type="hidden" name="inputType" value="FILE">
+					<label>Input File:</label>
+					<input type="file" name="file">
+					<br />
+					<input type="submit" value="upload">
+					<p>
+					<a href="<%=request.getContextPath()%>/download/test-data/neural-network-xor.xml" target="_blank">Download Test Data</a>
+					<br>
+					</p>
+				</fieldset>
+			</form>
+		</section>
+		
 	</section>
-	
-	<section class="form-section">
-		<form action="linearProgramming.action" method="post" enctype="multipart/form-data">
-			<fieldset>
-				<legend>Linear Programming</legend>
-				<input type="hidden" name="inputType" value="FILE">
-				<label>Input File:</label>
-				<input type="file" name="file">
-				<br />
-				<input type="submit" value="upload">
-				<p>
-				<a href="<%=request.getContextPath()%>/download/test-data/lpformat-example.txt" target="_blank">Download Test Data</a>
-				<br>
-				<a href="<%=request.getContextPath()%>/interactive-linear-programming.jsp">Interactive Calculator</a>
-				</p>
-			</fieldset>
-		</form>
-	</section>
-	
-	<section class="form-section">
-		<form action="simpleRegression.action" method="post" enctype="multipart/form-data">
-			<fieldset>
-				<legend>Simple Regression</legend>
-				<input type="hidden" name="inputType" value="FILE">
-				<label>Input File:</label>
-				<input type="file" name="file">
-				<br />
-				<input type="submit" value="upload">
-				<p>
-				<a href="<%=request.getContextPath()%>/download/test-data/testdata-simple-regression.txt" target="_blank">Download Test Data</a>
-				<br>
-				</p>
-			</fieldset>
-		</form>
-	</section>
-	
-	<section class="form-section">
-		<form action="kMeans.action" method="post" enctype="multipart/form-data">
-			<fieldset>
-				<legend>K-Means Clustering</legend>
-				<input type="hidden" name="inputType" value="FILE">
-				<label>Input File:</label>
-				<input type="file" name="file">
-				<br />
-				<label>Number of clusters:</label>
-				<input type="text" name="numClusters" value="2">
-				<br>
-				<label>Number if clusters:</label>
-				<input type="text" name="numIterations" value="100">
-				<br>
-				<input type="submit" value="upload">
-				<p>
-				<a href="<%=request.getContextPath()%>/download/test-data/testdata-kmeans.txt" target="_blank">Download Test Data</a>
-				<br>
-				</p>
-			</fieldset>
-		</form>
-	</section>
-	
 </body>
 </html>

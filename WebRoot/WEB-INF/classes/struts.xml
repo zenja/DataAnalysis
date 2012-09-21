@@ -35,6 +35,12 @@
 			<result name="error">/error.jsp</result>
 		</action>
 		
+		<action name="neuralNetwork" class="neuralNetworkAction" method="index">
+			<result name="success">/neural-network-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>
