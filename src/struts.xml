@@ -41,6 +41,12 @@
 			<result name="error">/error.jsp</result>
 		</action>
 		
+		<action name="timeSeriesVisualization" class="timeSeriesVisualizationAction" method="index">
+			<result name="success">/time-series-visualization-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>

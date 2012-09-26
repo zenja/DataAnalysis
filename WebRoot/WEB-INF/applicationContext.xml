@@ -67,5 +67,9 @@
 	<bean id="neuralNetworkAction" class="org.zenja.dataanalysis.action.NeuralNetworkAction"
 		scope="prototype">
 	</bean>
+	
+	<bean id="timeSeriesVisualizationAction" class="org.zenja.dataanalysis.action.TimeSeriesVisualizationAction"
+		scope="prototype">
+	</bean>
 
 </beans>

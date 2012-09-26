@@ -102,7 +102,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</form>
 		</section>
 		
-		<section>
+		<section class="form-section">
 			<form action="neuralNetwork"  method="post" enctype="multipart/form-data">
 				<fieldset>
 					<legend>Neural Network</legend>
@@ -115,6 +115,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<a href="<%=request.getContextPath()%>/download/test-data/neural-network-xor.xml" target="_blank">Download Test Data</a>
 						<br>
 						<a href="http://www.youtube.com/watch?v=hXf7bTR-s5Q&feature=share&list=PLrlNXTbG3w3cj63Gyfq0IeZCgo5sGpuXe" target="_blank">View demo</a>
+					</p>
+				</fieldset>
+			</form>
+		</section>
+		
+		<section class="form-section">
+			<form action="timeSeriesVisualization" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<legend>Time Series Visualization</legend>
+					<input type="hidden" name="inputType" value="FILE">
+					<label>Input File:</label>
+					<input type="file" name="file">
+					<br />
+					<input type="submit" value="upload">
+					<p>
+						<a href="<%=request.getContextPath()%>/download/test-data/time-series-data-example.xml" target="_blank">Download Test Data</a>
 					</p>
 				</fieldset>
 			</form>
