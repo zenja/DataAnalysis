@@ -4,7 +4,7 @@
 <struts>
 
 	<constant name="structs.il8n.encoding" value="UTF-8" />
-	<constant name="structs.multipart.saveDir" value="C:\" />
+	<constant name="structs.multipart.saveDir" value="/tmp/" />
 	<package name="user" extends="struts-default">
 		
 		<action name="test" class="testAction">
@@ -43,6 +43,12 @@
 		
 		<action name="timeSeriesVisualization" class="timeSeriesVisualizationAction" method="index">
 			<result name="success">/time-series-visualization-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="baumWelchHMM" class="baumWelchHMMAction" method="index">
+			<result name="success">/baum-welch-hmm-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>

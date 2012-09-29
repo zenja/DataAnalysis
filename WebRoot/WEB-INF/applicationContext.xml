@@ -71,5 +71,9 @@
 	<bean id="timeSeriesVisualizationAction" class="org.zenja.dataanalysis.action.TimeSeriesVisualizationAction"
 		scope="prototype">
 	</bean>
+	
+	<bean id="baumWelchHMMAction" class="org.zenja.dataanalysis.action.BaumWelchHMMAction"
+		scope="prototype">
+	</bean>
 
 </beans>

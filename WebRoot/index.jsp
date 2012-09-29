@@ -8,7 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 	<base href="<%=basePath%>">
-	<title>Data Analysis System (Prototype)</title>
+	<title>DataGobble Analysis System</title>
 	<link href="<%=request.getContextPath()%>/css/index.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -132,6 +132,39 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<p>
 						<a href="<%=request.getContextPath()%>/download/test-data/time-series-data-example.xml" target="_blank">Download Test Data</a>
 					</p>
+				</fieldset>
+			</form>
+		</section>
+		
+		<section class="form-section">
+			<form action="baumWelchHMM" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<legend>Baum Welch Hidden Markov Model (Experiment Version)</legend>
+					<input type="hidden" name="inputType" value="PLAIN_TEXT">
+					<input type="hidden" name="stateDistributionType" value="DISCRETE">
+					
+					<label>#States: </label>
+					<input type="text" name="numStates" value="2"><br>
+					
+					<label>#Items: </label>
+					<input type="text" name="numItems" value="2"><br>
+					
+					<label>Pi List: </label>
+					<textarea rows="5" cols="80" name="piListStr">0.95, 0.05</textarea><br>
+					
+					<label>State Distribution Probabilities List: </label>
+					<textarea rows="5" cols="80" name="stateDistributionProbabilitiesListStr">0.95, 0.05; 0.20, 0.80</textarea><br>
+					
+					<label>Transition Probability Data List: </label>
+					<textarea rows="5" cols="80" name="transitionProbabilityDataListStr">0, 1, 0.05; 0, 0, 0.95; 1, 0, 0.10; 1, 1, 0.90</textarea><br>
+					
+					<label>Observation Count: </label>
+					<input type="text" name="observationCount" value="200"><br>
+					
+					<label>Observation Length: </label>
+					<input type="text" name="observationLength" value="100"><br>
+					
+					<input type="submit" value="submit">
 				</fieldset>
 			</form>
 		</section>

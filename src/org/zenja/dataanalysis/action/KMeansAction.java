@@ -97,6 +97,10 @@ public class KMeansAction extends ActionSupport {
 	 * double_10,double_11,double_12,...
 	 */
 	private String handleActionForFile() {
+		if (file == null) {
+			return INPUT;
+		}
+		
 		FileInputStream fstream = null;
 		DataInputStream in = null;
 		BufferedReader br = null;
