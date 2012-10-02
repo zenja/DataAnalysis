@@ -10,6 +10,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<base href="<%=basePath%>">
 	<title>DataGobble Analysis System</title>
 	<link href="<%=request.getContextPath()%>/css/index.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="<%=request.getContextPath()%>/js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="<%=request.getContextPath()%>/js/index.js"></script>
 </head>
 
 <body>
@@ -137,7 +139,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</section>
 		
 		<section class="form-section">
-			<form action="baumWelchHMM" method="post" enctype="multipart/form-data">
+			<form action="baumWelchHMM" method="post">
 				<fieldset>
 					<legend>Baum Welch Hidden Markov Model (Experiment Version)</legend>
 					<input type="hidden" name="inputType" value="PLAIN_TEXT">
@@ -163,6 +165,69 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					
 					<label>Observation Length: </label>
 					<input type="text" name="observationLength" value="100"><br>
+					
+					<input type="submit" value="submit">
+				</fieldset>
+			</form>
+		</section>
+		
+		<section class="form-section">
+			<form action="randomNumberGenerate" method="post">
+				<fieldset>
+					<legend>Random Number Generation</legend>
+					
+					<input type="hidden" name="inputType" value="PLAIN_TEXT">
+					
+					<label>Distribution Type:</label>
+					<select id="rng-dist-type" name="distributionType">
+						<option value="select">-- select a distribution type --</option>
+						<option value="EXPONENTIAL">Exponential Distribution</option>
+						<option value="BETA">Beta Distribution</option>
+						<option value="NORMAL">Normal Distribution</option>
+						<option value="GAMMA">Gamma Distribution</option>
+						<option value="WEIBULL">Weibull Distribution</option>
+					</select><br>
+					
+					<label>Number of samples:</label>
+					<input type="text" name="numSample" value="500" ><br>
+					
+					<!-- for exponential distribution -->
+					<section id="exponential-dist">
+						<label>Mean Value:</label>
+						<input type="text" name="exponentialMean">
+					</section>
+					
+					<!-- for beta distribution -->
+					<section id="beta-dist">
+						<label>Alpha: </label>
+						<input type="text" name="betaAlpha"><br>
+						<label>Beta: </label>
+						<input type="text" name="betaBeta">
+					</section>
+					
+					<!-- for normal distribution -->
+					<section id="normal-dist">
+						<label>Mean Value: </label>
+						<input type="text" name="normalMean"><br>
+						<label>Standard Deviation: </label>
+						<input type="text" name="normalSd">
+					</section>
+					
+					<!-- for gamma distribution -->
+					<section id="gamma-dist">
+						<label>Alpha: </label>
+						<input type="text" name="gammaAlpha"><br>
+						<label>Beta: </label>
+						<input type="text" name="gammaBeta">
+					</section>
+					
+					<!-- for weibull distribution -->
+					<section id="weibull-dist">
+						<label>Alpha: </label>
+						<input type="text" name="wbAlpha"><br>
+						<label>Beta: </label>
+						<input type="text" name="wbBeta">
+					</section>
 					
 					<input type="submit" value="submit">
 				</fieldset>

@@ -53,6 +53,12 @@
 			<result name="error">/error.jsp</result>
 		</action>
 		
+		<action name="randomNumberGenerate" class="randomNumberGenerateAction" method="index">
+			<result name="success">/random-number-generate-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>

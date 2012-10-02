@@ -75,5 +75,9 @@
 	<bean id="baumWelchHMMAction" class="org.zenja.dataanalysis.action.BaumWelchHMMAction"
 		scope="prototype">
 	</bean>
+	
+	<bean id="randomNumberGenerateAction" class="org.zenja.dataanalysis.action.RandomNumberGenerateAction"
+		scope="prototype">
+	</bean>
 
 </beans>
