@@ -4,29 +4,29 @@ import org.apache.commons.math3.distribution.BetaDistribution;
 import org.apache.commons.math3.distribution.ExponentialDistribution;
 import org.apache.commons.math3.distribution.GammaDistribution;
 import org.apache.commons.math3.distribution.NormalDistribution;
+import org.apache.commons.math3.distribution.RealDistribution;
 import org.apache.commons.math3.distribution.WeibullDistribution;
 import org.zenja.dataanalysis.action.enums.DistributionType;
 import org.zenja.dataanalysis.action.enums.InputType;
-
 import com.opensymphony.xwork2.ActionSupport;
 
-public class RandomNumberGenerateAction extends ActionSupport {
-	
-	private static final long serialVersionUID = 3732624883856340120L;
+public class DistributionAction extends ActionSupport {
 
+	private static final long serialVersionUID = -5478981398330352953L;
+	
 	/*
 	 * Received from view
 	 */
 	private InputType inputType;
 	
 	private DistributionType distributionType;
-	private int numSample;
 	
 	private double exponentialMean;
 	private double betaAlpha, betaBeta;
 	private double normalMean, normalSd;
 	private double gammaAlpha, gammaBeta;
 	private double wbAlpha, wbBeta;
+	private double x;
 	
 	public InputType getInputType() {
 		return inputType;
@@ -42,14 +42,6 @@ public class RandomNumberGenerateAction extends ActionSupport {
 
 	public void setDistributionType(DistributionType distributionType) {
 		this.distributionType = distributionType;
-	}
-
-	public int getNumSample() {
-		return numSample;
-	}
-
-	public void setNumSample(int numSample) {
-		this.numSample = numSample;
 	}
 
 	public double getExponentialMean() {
@@ -123,23 +115,28 @@ public class RandomNumberGenerateAction extends ActionSupport {
 	public void setWbBeta(double wbBeta) {
 		this.wbBeta = wbBeta;
 	}
+	
+	public double getX() {
+		return x;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
 
 
 	/*
 	 * Passed To View
 	 */
-	
-	private double[] randomSequence;
 	private String distTypeStr;
+	private double numericalMean;
+	private double numericalVariance;
+	private double probability;
+	private double cumulativeProbability;
+	private double supportLowerBound;
+	private double supportUpperBound;
 	
-	public double[] getRandomSequence() {
-		return randomSequence;
-	}
-
-	public void setRandomSequence(double[] randomSequence) {
-		this.randomSequence = randomSequence;
-	}
-
+	
 	public String getDistTypeStr() {
 		return distTypeStr;
 	}
@@ -148,79 +145,132 @@ public class RandomNumberGenerateAction extends ActionSupport {
 		this.distTypeStr = distTypeStr;
 	}
 
+	public double getNumericalMean() {
+		return numericalMean;
+	}
+
+	public void setNumericalMean(double numericalMean) {
+		this.numericalMean = numericalMean;
+	}
+
+	public double getNumericalVariance() {
+		return numericalVariance;
+	}
+
+	public void setNumericalVariance(double numericalVariance) {
+		this.numericalVariance = numericalVariance;
+	}
+
+	public double getProbability() {
+		return probability;
+	}
+
+	public void setProbability(double probability) {
+		this.probability = probability;
+	}
+
+	public double getSupportLowerBound() {
+		return supportLowerBound;
+	}
+
+	public void setSupportLowerBound(double supportLowerBound) {
+		this.supportLowerBound = supportLowerBound;
+	}
+
+	public double getSupportUpperBound() {
+		return supportUpperBound;
+	}
+
+	public void setSupportUpperBound(double supportUpperBound) {
+		this.supportUpperBound = supportUpperBound;
+	}
+
+	public double getCumulativeProbability() {
+		return cumulativeProbability;
+	}
+
+	public void setCumulativeProbability(double cumulativeProbability) {
+		this.cumulativeProbability = cumulativeProbability;
+	}
+
 	/***********************
 	 * Helper Methods Below
 	 ***********************/
 	
-	public String handleActionForPlainText() {
-		if (distributionType == null) {
-			return INPUT;
-		}
-		
-		if (numSample <= 0) {
-			return INPUT;
-		}
-		
-		switch (distributionType) {
-		case EXPONENTIAL:
-			return generateExponential();
-		case BETA:
-			return generateBeta();
-		case NORMAL:
-			return generateNormal();
-		case GAMMA:
-			return generateGamma();
-		case WEIBULL:
-			return generateWeibull();
-		default:
-			return INPUT;
-		}
-		
-	}
-	
-	private String generateExponential() {
+	private String handleExponential() {
 		distTypeStr = "Exponential distribution";
 		
 		ExponentialDistribution expDist = new ExponentialDistribution(exponentialMean);
-		randomSequence = expDist.sample(numSample);
+		
+		setResultValues(expDist);
 		
 		return SUCCESS;
 	}
 	
-	private String generateBeta() {
+	private String handleBeta() {
 		distTypeStr = "Beta distribution";
 		
 		BetaDistribution betaDist = new BetaDistribution(betaAlpha, betaBeta);
-		randomSequence = betaDist.sample(numSample);
+		
+		setResultValues(betaDist);
 		
 		return SUCCESS;
 	}
 	
-	private String generateNormal() {
+	private String handleNormal() {
 		distTypeStr = "Normal distribution";
 		
 		NormalDistribution normalDist = new NormalDistribution(normalMean, normalSd);
-		randomSequence = normalDist.sample(numSample);
+		
+		setResultValues(normalDist);
 		
 		return SUCCESS;
 	}
 	
-	private String generateGamma() {
+	private String handleGamma() {
 		distTypeStr = "Gamma distribution";
 		
 		GammaDistribution gammaDist = new GammaDistribution(gammaAlpha, gammaBeta);
-		randomSequence = gammaDist.sample(numSample);
+		
+		setResultValues(gammaDist);
 		
 		return SUCCESS;
 	}
 	
-	private String generateWeibull() {
+	private String handleWeibull() {
 		distTypeStr = "Weibull distribution";
 		
 		WeibullDistribution wbDist = new WeibullDistribution(wbAlpha, wbBeta);
-		randomSequence = wbDist.sample(numSample);
+		
+		setResultValues(wbDist);
 		
 		return SUCCESS;
+	}
+	
+	private void setResultValues(RealDistribution rdist) {
+		numericalMean = rdist.getNumericalMean();
+		numericalVariance = rdist.getNumericalVariance();
+		probability = rdist.probability(x);
+		cumulativeProbability = rdist.cumulativeProbability(x);
+		supportLowerBound = rdist.getSupportLowerBound();
+		supportUpperBound = rdist.getSupportUpperBound();
+	}
+	
+	public String handleActionForPlainText() {
+		switch (distributionType) {
+		case EXPONENTIAL:
+			return handleExponential();
+		case BETA:
+			return handleBeta();
+		case NORMAL:
+			return handleNormal();
+		case GAMMA:
+			return handleGamma();
+		case WEIBULL:
+			return handleWeibull();
+		default:
+			return INPUT;
+		}
 	}
 	
 	/***********************
@@ -241,5 +291,4 @@ public class RandomNumberGenerateAction extends ActionSupport {
 			return INPUT;
 		}
 	}
-	
 }

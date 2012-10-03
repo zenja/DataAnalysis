@@ -79,5 +79,9 @@
 	<bean id="randomNumberGenerateAction" class="org.zenja.dataanalysis.action.RandomNumberGenerateAction"
 		scope="prototype">
 	</bean>
+	
+	<bean id="distributionAction" class="org.zenja.dataanalysis.action.DistributionAction"
+		scope="prototype">
+	</bean>
 
 </beans>

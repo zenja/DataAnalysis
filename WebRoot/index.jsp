@@ -192,13 +192,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<input type="text" name="numSample" value="500" ><br>
 					
 					<!-- for exponential distribution -->
-					<section id="exponential-dist">
+					<section id="rng-exponential-dist">
 						<label>Mean Value:</label>
 						<input type="text" name="exponentialMean">
 					</section>
 					
 					<!-- for beta distribution -->
-					<section id="beta-dist">
+					<section id="rng-beta-dist">
 						<label>Alpha: </label>
 						<input type="text" name="betaAlpha"><br>
 						<label>Beta: </label>
@@ -206,7 +206,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</section>
 					
 					<!-- for normal distribution -->
-					<section id="normal-dist">
+					<section id="rng-normal-dist">
 						<label>Mean Value: </label>
 						<input type="text" name="normalMean"><br>
 						<label>Standard Deviation: </label>
@@ -214,7 +214,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</section>
 					
 					<!-- for gamma distribution -->
-					<section id="gamma-dist">
+					<section id="rng-gamma-dist">
 						<label>Alpha: </label>
 						<input type="text" name="gammaAlpha"><br>
 						<label>Beta: </label>
@@ -222,7 +222,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</section>
 					
 					<!-- for weibull distribution -->
-					<section id="weibull-dist">
+					<section id="rng-weibull-dist">
 						<label>Alpha: </label>
 						<input type="text" name="wbAlpha"><br>
 						<label>Beta: </label>
@@ -230,6 +230,70 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</section>
 					
 					<input type="submit" value="submit">
+				</fieldset>
+			</form>
+		</section>
+		
+		<section class="form-section">
+			<form action="distribution" method="post">
+				<fieldset>
+					<legend>Distribution</legend>
+					
+					<input type="hidden" name="inputType" value="PLAIN_TEXT">
+					
+					<label>Distribution Type:</label>
+					<select id="dist-dist-type" name="distributionType">
+						<option value="select">-- select a distribution type --</option>
+						<option value="EXPONENTIAL">Exponential Distribution</option>
+						<option value="BETA">Beta Distribution</option>
+						<option value="NORMAL">Normal Distribution</option>
+						<option value="GAMMA">Gamma Distribution</option>
+						<option value="WEIBULL">Weibull Distribution</option>
+					</select><br>
+					
+					<label>Value of x: </label>
+					<input type="text" name="x">
+					
+					<!-- for exponential distribution -->
+					<section id="dist-exponential-dist">
+						<label>Mean Value:</label>
+						<input type="text" name="exponentialMean">
+					</section>
+					
+					<!-- for beta distribution -->
+					<section id="dist-beta-dist">
+						<label>Alpha: </label>
+						<input type="text" name="betaAlpha"><br>
+						<label>Beta: </label>
+						<input type="text" name="betaBeta">
+					</section>
+					
+					<!-- for normal distribution -->
+					<section id="dist-normal-dist">
+						<label>Mean Value: </label>
+						<input type="text" name="normalMean"><br>
+						<label>Standard Deviation: </label>
+						<input type="text" name="normalSd">
+					</section>
+					
+					<!-- for gamma distribution -->
+					<section id="dist-gamma-dist">
+						<label>Alpha: </label>
+						<input type="text" name="gammaAlpha"><br>
+						<label>Beta: </label>
+						<input type="text" name="gammaBeta">
+					</section>
+					
+					<!-- for weibull distribution -->
+					<section id="dist-weibull-dist">
+						<label>Alpha: </label>
+						<input type="text" name="wbAlpha"><br>
+						<label>Beta: </label>
+						<input type="text" name="wbBeta">
+					</section>
+					
+					<input type="submit" value="submit">
+					
 				</fieldset>
 			</form>
 		</section>

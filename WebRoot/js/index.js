@@ -8,32 +8,70 @@ $(document).ready(function() {
 		switch (rng_dist_type_select.val()) {
 		case "EXPONENTIAL":
 			hide_rng_input();
-			$("#exponential-dist").show();
+			$("#rng-exponential-dist").show();
 			break;
 		case "BETA":
 			hide_rng_input();
-			$("#beta-dist").show();
+			$("#rng-beta-dist").show();
 			break;
 		case "NORMAL":
 			hide_rng_input();
-			$("#normal-dist").show();
+			$("#rng-normal-dist").show();
 			break;
 		case "GAMMA":
 			hide_rng_input();
-			$("#gamma-dist").show();
+			$("#rng-gamma-dist").show();
 			break;
 		case "WEIBULL":
 			hide_rng_input();
-			$("#weibull-dist").show();
+			$("#rng-weibull-dist").show();
+			break;
+		};
+	});
+	
+	var dist_dist_type_select = $("#dist-dist-type");
+	
+	hide_dist_input();
+	dist_dist_type_select.val("select");
+	
+	dist_dist_type_select.bind("change", function() {
+		switch (dist_dist_type_select.val()) {
+		case "EXPONENTIAL":
+			hide_dist_input();
+			$("#dist-exponential-dist").show();
+			break;
+		case "BETA":
+			hide_dist_input();
+			$("#dist-beta-dist").show();
+			break;
+		case "NORMAL":
+			hide_dist_input();
+			$("#dist-normal-dist").show();
+			break;
+		case "GAMMA":
+			hide_dist_input();
+			$("#dist-gamma-dist").show();
+			break;
+		case "WEIBULL":
+			hide_dist_input();
+			$("#dist-weibull-dist").show();
 			break;
 		};
 	});
 });
 
 function hide_rng_input() {
-	$("#exponential-dist").hide();
-	$("#beta-dist").hide();
-	$("#normal-dist").hide();
-	$("#gamma-dist").hide();
-	$("#weibull-dist").hide();
+	$("#rng-exponential-dist").hide();
+	$("#rng-beta-dist").hide();
+	$("#rng-normal-dist").hide();
+	$("#rng-gamma-dist").hide();
+	$("#rng-weibull-dist").hide();
+}
+
+function hide_dist_input() {
+	$("#dist-exponential-dist").hide();
+	$("#dist-beta-dist").hide();
+	$("#dist-normal-dist").hide();
+	$("#dist-gamma-dist").hide();
+	$("#dist-weibull-dist").hide();
 }
