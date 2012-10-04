@@ -133,6 +133,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<input type="submit" value="upload">
 					<p>
 						<a href="<%=request.getContextPath()%>/download/test-data/time-series-data-example.xml" target="_blank">Download Test Data</a>
+						<br>
+						<a href="http://www.youtube.com/watch?v=hFVXxH5sql4&feature=share&list=ULhFVXxH5sql4" target="_blank">View demo</a>
 					</p>
 				</fieldset>
 			</form>
@@ -230,6 +232,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</section>
 					
 					<input type="submit" value="submit">
+					
+					<p>
+						<a href="http://www.youtube.com/watch?v=cowkfBbSnRI&feature=share&list=ULcowkfBbSnRI" target="_blank">View demo</a>
+					</p>
 				</fieldset>
 			</form>
 		</section>
@@ -294,6 +300,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					
 					<input type="submit" value="submit">
 					
+					<p>
+						<a href="http://www.youtube.com/watch?v=miZGB8Y1xDw&feature=share&list=ULmiZGB8Y1xDw" target="_blank">View demo</a>
+					</p>
+					
 				</fieldset>
 			</form>
 		</section>
@@ -312,6 +322,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<input type="submit" value="upload">
 					<p>
 						<a href="<%=request.getContextPath()%>/download/test-data/testdata-value-server.txt" target="_blank">Download Test Data</a>
+						<br>
+						<a href="http://youtu.be/33UCu-BiL-w" target="_blank">View demo</a>
 					</p>
 				</fieldset>
 			</form>
