@@ -65,6 +65,12 @@
 			<result name="error">/error.jsp</result>
 		</action>
 		
+		<action name="valueServer" class="valueServerAction" method="index">
+			<result name="success">/value-server-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>

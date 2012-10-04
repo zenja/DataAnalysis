@@ -83,5 +83,9 @@
 	<bean id="distributionAction" class="org.zenja.dataanalysis.action.DistributionAction"
 		scope="prototype">
 	</bean>
+	
+	<bean id="valueServerAction" class="org.zenja.dataanalysis.action.ValueServerAction"
+		scope="prototype">
+	</bean>
 
 </beans>

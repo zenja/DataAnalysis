@@ -298,6 +298,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</form>
 		</section>
 		
+		<section class="form-section">
+			<form action="valueServer" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<legend>Value Server</legend>
+					<p>This tool estimates a probability density function based on data from the file, 
+					and then generate a sequence of numbers based on that density function</p>
+					<input type="hidden" name="inputType" value="FILE">
+					<label>Input File:</label>
+					<input type="file" name="file"><br>
+					<label>Number of samples:</label>
+					<input type="text" name="numSample" value="500" ><br>
+					<input type="submit" value="upload">
+					<p>
+						<a href="<%=request.getContextPath()%>/download/test-data/testdata-value-server.txt" target="_blank">Download Test Data</a>
+					</p>
+				</fieldset>
+			</form>
+		</section>
+		
 	</section>
 </body>
 </html>
