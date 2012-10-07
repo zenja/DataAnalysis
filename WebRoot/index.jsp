@@ -329,6 +329,27 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</form>
 		</section>
 		
+		<section class="form-section">
+			<form action="solveLinearSystem" method="post" enctype="multipart/form-data">
+				<fieldset>
+					<legend>Solving Linear System</legend>
+					<input type="hidden" name="inputType" value="FILE">
+					<label>Input File:</label>
+					<input type="file" name="file">
+					<br />
+					<label>Precisition:</label>
+					<input type="text" name="precision" value="2">
+					<br>
+					<input type="submit" value="upload">
+					<p>
+						<a href="<%=request.getContextPath()%>/download/test-data/testdata-solve-linear-system.txt" target="_blank">Download Test Data</a>
+						<br>
+						<a href="#" target="_blank">View demo</a>
+					</p>
+				</fieldset>
+			</form>
+		</section>
+		
 	</section>
 </body>
 </html>

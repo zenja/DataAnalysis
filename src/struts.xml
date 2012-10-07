@@ -71,6 +71,12 @@
 			<result name="error">/error.jsp</result>
 		</action>
 		
+		<action name="solveLinearSystem" class="solveLinearSystemAction" method="index">
+			<result name="success">/solve-linear-system-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>

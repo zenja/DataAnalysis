@@ -8,21 +8,12 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import lpsolve.*;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.math3.optimization.GoalType;
-import org.apache.commons.math3.optimization.PointValuePair;
-import org.apache.commons.math3.optimization.linear.LinearConstraint;
-import org.apache.commons.math3.optimization.linear.LinearObjectiveFunction;
-import org.apache.commons.math3.optimization.linear.Relationship;
-import org.apache.commons.math3.optimization.linear.SimplexSolver;
 import org.zenja.dataanalysis.action.enums.InputType;
-import org.zenja.dataanalysis.analysistools.enums.FormulaRelationship;
-import org.zenja.dataanalysis.analysistools.utils.FormulaRelationshipStringGenerator;
 
 import com.opensymphony.xwork2.ActionSupport;
 

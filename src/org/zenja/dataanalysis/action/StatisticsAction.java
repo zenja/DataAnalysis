@@ -1,6 +1,5 @@
 package org.zenja.dataanalysis.action;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -163,6 +162,7 @@ public class StatisticsAction extends ActionSupport {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return ERROR;
 		} catch (Exception e) {
 			// Default Error Handling
 			return ERROR;

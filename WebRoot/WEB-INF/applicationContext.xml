@@ -87,5 +87,9 @@
 	<bean id="valueServerAction" class="org.zenja.dataanalysis.action.ValueServerAction"
 		scope="prototype">
 	</bean>
+	
+	<bean id="solveLinearSystemAction" class="org.zenja.dataanalysis.action.SolveLinearSystemAction"
+		scope="prototype">
+	</bean>
 
 </beans>
