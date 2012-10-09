@@ -77,6 +77,13 @@
 			<result name="error">/error.jsp</result>
 		</action>
 		
+		<action name="matrixOperation" class="matrixOperationAction" method="index">
+			<result name="success">/matrix-operation-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="DimensionError">/matrix-operation-dimension-error.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>

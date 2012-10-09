@@ -91,5 +91,9 @@
 	<bean id="solveLinearSystemAction" class="org.zenja.dataanalysis.action.SolveLinearSystemAction"
 		scope="prototype">
 	</bean>
+	
+	<bean id="matrixOperationAction" class="org.zenja.dataanalysis.action.MatrixOperationAction"
+		scope="prototype">
+	</bean>
 
 </beans>

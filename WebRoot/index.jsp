@@ -336,7 +336,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<input type="hidden" name="inputType" value="FILE">
 					<label>Input File:</label>
 					<input type="file" name="file">
-					<br />
+					<br>
 					<label>Precisition:</label>
 					<input type="text" name="precision" value="2">
 					<br>
@@ -344,6 +344,42 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<p>
 						<a href="<%=request.getContextPath()%>/download/test-data/testdata-solve-linear-system.txt" target="_blank">Download Test Data</a>
 						<br>
+						<a href="#" target="_blank">View demo</a>
+					</p>
+				</fieldset>
+			</form>
+		</section>
+		
+		<section class="form-section">
+			<form action="matrixOperation" method="post">
+				<fieldset>
+					<legend>Matrix Operation</legend>
+					<input type="hidden" name="inputType" value="PLAIN_TEXT">
+					<label>Matrix 1:</label>
+<textarea rows="8" cols="16" name="matrixStringOne">
+0 0 0 0 0 1
+0 0 0 0 1 0
+0 0 0 1 0 0
+0 0 1 0 0 0
+0 1 0 0 0 0
+1 0 0 0 0 0
+</textarea>
+					<br>
+					<label>Matrix 2:</label>
+<textarea rows="8" cols="16" name="matrixStringTwo">
+1 2 3 4 5 6
+7 8 9 10 11 12
+</textarea>
+					<br>
+					<label>Operation:</label>
+					<select name="matrixOperationType" value="MULTIPLY">
+						<option value="MULTIPLY">Multiply</option>
+						<option value="ADD">Add</option>
+						<option value="SUBTRACT">Subtract</option>
+					</select>
+					<br>
+					<input type="submit" value="submit">
+					<p>
 						<a href="#" target="_blank">View demo</a>
 					</p>
 				</fieldset>
