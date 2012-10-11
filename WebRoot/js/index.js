@@ -60,6 +60,24 @@ $(document).ready(function() {
 	});
 });
 
+/* for complex number operation module */
+$(document).ready(function() {
+	var complex_operation_select = $("#complex-operation-select");
+	complex_operation_select.bind("change", function() {
+		switch (complex_operation_select.val()) {
+		case "ADD":
+		case "SUBTRACT":
+		case "MULTIPLY":
+		case "DIVIDE":
+			$("#complex-two").show();
+			break;
+		default:
+			$("#complex-two").val("");
+			$("#complex-two").hide();
+		};
+	});
+});
+
 function hide_rng_input() {
 	$("#rng-exponential-dist").hide();
 	$("#rng-beta-dist").hide();

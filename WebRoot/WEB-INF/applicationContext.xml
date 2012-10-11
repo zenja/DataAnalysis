@@ -95,5 +95,9 @@
 	<bean id="matrixOperationAction" class="org.zenja.dataanalysis.action.MatrixOperationAction"
 		scope="prototype">
 	</bean>
+	
+	<bean id="complexNumberOperationAction" class="org.zenja.dataanalysis.action.ComplexNumberOperationAction"
+		scope="prototype">
+	</bean>
 
 </beans>

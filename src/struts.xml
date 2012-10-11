@@ -84,6 +84,12 @@
 			<result name="DimensionError">/matrix-operation-dimension-error.jsp</result>
 		</action>
 		
+		<action name="complexNumberOperation" class="complexNumberOperationAction" method="index">
+			<result name="success">/complex-number-operation-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>

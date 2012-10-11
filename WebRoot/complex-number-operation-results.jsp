@@ -8,30 +8,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 	<base href="<%=basePath%>">
-	<title>Matrix Operation</title>
+	<title>Complex Number Operation</title>
 </head>
 
 <body>
-<h1>Matrix Operation</h1>
+<h1>Complex Number Operation</h1>
 
 <h2>Input</h2>
 
 <p>
-Matrix 1:<br>
-${ matrixOneStr }
+Complex Number 1:<br>
+${ cnOneStr }
 </p>
 
 <p>
-Matrix 2:<br>
-${ matrixTwoStr }
+Complex Number 2:<br>
+${ cnTwoStr }
 </p>
 
-<p>Operation: ${ operationString }</p>
+<p>Operation: ${ operationName }</p>
 
 <h2>Result</h2>
 
 <p>
-${ resultMatrixStr }
+${ resultStr }
 </p>
 
 </body>
