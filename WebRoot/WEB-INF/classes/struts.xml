@@ -90,6 +90,12 @@
 			<result name="error">/error.jsp</result>
 		</action>
 		
+		<action name="chiSquareTest" class="statisticalTestAction" method="chiSquareTest">
+			<result name="success">/chi-square-test-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>

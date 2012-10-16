@@ -427,6 +427,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</form>
 		</section>
 		
+		<section class="form-section">
+			<form action="chiSquareTest" method="post">
+				<fieldset>
+					<legend>Chi-square Test</legend>
+					<input type="hidden" name="inputType" value="PLAIN_TEXT">
+					
+					<label>Observed values: </label>
+					<textarea rows="5" cols="80" name="observedStr">10, 9, 11</textarea><br>
+					
+					<label>Expected values: </label>
+					<textarea rows="5" cols="80" name="expectedStr">10.1, 9.8, 10.3</textarea><br>
+					
+					<input type="submit" value="submit">
+				</fieldset>
+			</form>
+		</section>
+		
 	</section>
 </body>
 </html>

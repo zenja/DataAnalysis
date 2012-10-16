@@ -99,5 +99,9 @@
 	<bean id="complexNumberOperationAction" class="org.zenja.dataanalysis.action.ComplexNumberOperationAction"
 		scope="prototype">
 	</bean>
+	
+	<bean id="statisticalTestAction" class="org.zenja.dataanalysis.action.StatisticalTestAction"
+		scope="prototype">
+	</bean>
 
 </beans>
