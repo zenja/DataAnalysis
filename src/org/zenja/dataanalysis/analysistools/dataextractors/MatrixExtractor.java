@@ -22,7 +22,13 @@ public class MatrixExtractor {
 	 * 
 	 * @return
 	 */
-	public double[][] extractMatrix(final String matrixStr, final String lineDelimiterRegx, final String numDelimiterRegx) {
+	public static double[][] extractMatrixAs2DArray(final String matrixStr, final String lineDelimiterRegx, final String numDelimiterRegx) {
+		
+		return get2DArrayFromArrayList(
+				extractMatrixAsArrayList(matrixStr, lineDelimiterRegx, numDelimiterRegx));
+	}
+	
+	public static ArrayList<ArrayList<Double>> extractMatrixAsArrayList(final String matrixStr, final String lineDelimiterRegx, final String numDelimiterRegx) {
 		ArrayList<ArrayList<Double>> arrayListMatrix = new ArrayList<ArrayList<Double>>();
 		
 		String[] lineStrs = matrixStr.split(lineDelimiterRegx);
@@ -38,10 +44,10 @@ public class MatrixExtractor {
 			arrayListMatrix.add(listLine);
 		}
 		
-		return get2DArrayFromArrayList(arrayListMatrix);
+		return arrayListMatrix;
 	}
 	
-	protected double[][] get2DArrayFromArrayList(final ArrayList<ArrayList<Double>> arrayListMatrix) {
+	protected static double[][] get2DArrayFromArrayList(final ArrayList<ArrayList<Double>> arrayListMatrix) {
 		double[][] arrayMatrix = new double[arrayListMatrix.size()][];
 		for (int i = 0; i < arrayListMatrix.size(); i++) {
 			ArrayList<Double> numList = arrayListMatrix.get(i);
@@ -54,7 +60,7 @@ public class MatrixExtractor {
 		return arrayMatrix;
 	}
 	
-	protected void printMatrix(double[][] matrix) {
+	protected static void printMatrix(double[][] matrix) {
 		for (double[] line : matrix) {
 			for (double num : line) {
 				System.out.print(num + " ");
@@ -72,13 +78,12 @@ public class MatrixExtractor {
 		String lineDelimiterRegx2 = "(\r\n|\n\r|\n)";
 		String numDelimiterRegx2 = " "; 
 		
-		MatrixExtractor extractor = new MatrixExtractor();
-		double[][] matrix1 = extractor.extractMatrix(matrixStr1, lineDelimiterRegx1, numDelimiterRegx1);
-		double[][] matrix2 = extractor.extractMatrix(matrixStr2, lineDelimiterRegx2, numDelimiterRegx2);
+		double[][] matrix1 = MatrixExtractor.extractMatrixAs2DArray(matrixStr1, lineDelimiterRegx1, numDelimiterRegx1);
+		double[][] matrix2 = MatrixExtractor.extractMatrixAs2DArray(matrixStr2, lineDelimiterRegx2, numDelimiterRegx2);
 		
 		System.out.println("Matrix 1");
-		extractor.printMatrix(matrix1);
+		MatrixExtractor.printMatrix(matrix1);
 		System.out.println("Matrix 2");
-		extractor.printMatrix(matrix2);
+		MatrixExtractor.printMatrix(matrix2);
 	}
 }

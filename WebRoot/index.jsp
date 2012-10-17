@@ -444,6 +444,41 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</form>
 		</section>
 		
+		<section class="form-section">
+			<form action="oneWayAnovaTest" method="post">
+				<fieldset>
+					<legend>One-way Anova Test</legend>
+					<input type="hidden" name="inputType" value="PLAIN_TEXT">
+					
+					<label>Classes: (one line per class)</label>
+<textarea rows="8" cols="80" name="oneWayAnovaTestDataStr">
+93.0, 103.0, 95.0, 101.0, 91.0, 105.0, 96.0, 94.0, 101.0
+99.0, 92.0, 102.0, 100.0, 102.0, 89.0
+110.0, 115.0, 111.0, 117.0, 128.0, 117.0
+</textarea><br>
+					
+					<input type="submit" value="submit">
+				</fieldset>
+			</form>
+		</section>
+		
+		<section class="form-section">
+			<form action="twoSampleTTest" method="post">
+				<fieldset>
+					<legend>Two Sample t-test</legend>
+					<input type="hidden" name="inputType" value="PLAIN_TEXT">
+					
+					<label>Sample 1</label>
+					<textarea rows="5" cols="80" name="tTestSampleOneStr">93.0, 103.0, 95.0, 101.0, 91.0, 105.0</textarea><br>
+					
+					<label>Sample 2</label>
+					<textarea rows="5" cols="80" name="tTestSampleTwoStr">99.0, 92.0, 102.0, 100.0, 102.0, 89.0</textarea><br>
+					
+					<input type="submit" value="submit">
+				</fieldset>
+			</form>
+		</section>
+		
 	</section>
 </body>
 </html>

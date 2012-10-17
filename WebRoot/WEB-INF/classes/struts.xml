@@ -96,6 +96,18 @@
 			<result name="error">/error.jsp</result>
 		</action>
 		
+		<action name="oneWayAnovaTest" class="statisticalTestAction" method="oneWayAnovaTest">
+			<result name="success">/one-way-anova-test-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="twoSampleTTest" class="statisticalTestAction" method="twoSampleTTest">
+			<result name="success">/two-sample-t-test-results.jsp</result>
+			<result name="input">/input-error.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
 	</package>
 
 </struts>

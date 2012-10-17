@@ -120,9 +120,8 @@ public class MatrixOperationAction extends ActionSupport {
 			return INPUT;
 		}
 		
-		MatrixExtractor extractor = new MatrixExtractor();
-		double[][] arrMatrix1 = extractor.extractMatrix(matrixStringOne, "(\r\n|\n\r|\n)", " ");
-		double[][] arrMatrix2 = extractor.extractMatrix(matrixStringTwo, "(\r\n|\n\r|\n)", " ");
+		double[][] arrMatrix1 = MatrixExtractor.extractMatrixAs2DArray(matrixStringOne, "(\r\n|\n\r|\n)", " ");
+		double[][] arrMatrix2 = MatrixExtractor.extractMatrixAs2DArray(matrixStringTwo, "(\r\n|\n\r|\n)", " ");
 		
 		RealMatrix matrix1 = new Array2DRowRealMatrix(arrMatrix1);
 		RealMatrix matrix2 = new Array2DRowRealMatrix(arrMatrix2);
