@@ -36,7 +36,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<p>
 						<a href="<%=request.getContextPath()%>/download/test-data/lpformat-example.txt" target="_blank">Download Test Data</a>
 						<br>
-						<a href="<%=request.getContextPath()%>/interactive-linear-programming.jsp">Interactive Calculator</a>
+						<a href="<%=request.getContextPath()%>/tools/interactive-linear-programming.jsp">Interactive Calculator</a>
 						<br>
 						<a href="http://www.youtube.com/watch?v=b6FctQ-_M5E&feature=share&list=PLrlNXTbG3w3cj63Gyfq0IeZCgo5sGpuXe" target="_blank">View demo</a>
 					</p>
