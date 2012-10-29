@@ -12,98 +12,98 @@
 		</action>
 		
 		<action name="statistics" class="statisticsAction" method="index">
-			<result name="success">/statistics-results.jsp</result>
+			<result name="success">/tools/results/statistics-results.jsp</result>
 			<result name="input_error">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="linearProgramming" class="linearProgrammingAction" method="index">
-			<result name="success">/linear-programming-results.jsp</result>
+			<result name="success">/tools/results/linear-programming-results.jsp</result>
 			<result name="input_error">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="simpleRegression" class="simpleRegressionAction" method="index">
-			<result name="success">/simple-regression-results.jsp</result>
+			<result name="success">/tools/results/simple-regression-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="kMeans" class="kMeansAction" method="index">
-			<result name="success">/kmeans-results.jsp</result>
+			<result name="success">/tools/results/kmeans-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="neuralNetwork" class="neuralNetworkAction" method="index">
-			<result name="success">/neural-network-results.jsp</result>
+			<result name="success">/tools/results/neural-network-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="timeSeriesVisualization" class="timeSeriesVisualizationAction" method="index">
-			<result name="success">/time-series-visualization-results.jsp</result>
+			<result name="success">/tools/results/time-series-visualization-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="baumWelchHMM" class="baumWelchHMMAction" method="index">
-			<result name="success">/baum-welch-hmm-results.jsp</result>
+			<result name="success">/tools/results/baum-welch-hmm-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="randomNumberGenerate" class="randomNumberGenerateAction" method="index">
-			<result name="success">/random-number-generate-results.jsp</result>
+			<result name="success">/tools/results/random-number-generate-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="distribution" class="distributionAction" method="index">
-			<result name="success">/distribution-results.jsp</result>
+			<result name="success">/tools/results/distribution-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="valueServer" class="valueServerAction" method="index">
-			<result name="success">/value-server-results.jsp</result>
+			<result name="success">/tools/results/value-server-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="solveLinearSystem" class="solveLinearSystemAction" method="index">
-			<result name="success">/solve-linear-system-results.jsp</result>
+			<result name="success">/tools/results/solve-linear-system-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="matrixOperation" class="matrixOperationAction" method="index">
-			<result name="success">/matrix-operation-results.jsp</result>
+			<result name="success">/tools/results/matrix-operation-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
-			<result name="DimensionError">/matrix-operation-dimension-error.jsp</result>
+			<result name="DimensionError">/tools/results/matrix-operation-dimension-error.jsp</result>
 		</action>
 		
 		<action name="complexNumberOperation" class="complexNumberOperationAction" method="index">
-			<result name="success">/complex-number-operation-results.jsp</result>
+			<result name="success">/tools/results/complex-number-operation-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="chiSquareTest" class="statisticalTestAction" method="chiSquareTest">
-			<result name="success">/chi-square-test-results.jsp</result>
+			<result name="success">/tools/results/chi-square-test-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="oneWayAnovaTest" class="statisticalTestAction" method="oneWayAnovaTest">
-			<result name="success">/one-way-anova-test-results.jsp</result>
+			<result name="success">/tools/results/one-way-anova-test-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 		
 		<action name="twoSampleTTest" class="statisticalTestAction" method="twoSampleTTest">
-			<result name="success">/two-sample-t-test-results.jsp</result>
+			<result name="success">/tools/results/two-sample-t-test-results.jsp</result>
 			<result name="input">/input-error.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>

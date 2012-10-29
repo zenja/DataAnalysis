@@ -31,7 +31,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<li><a href="<%=request.getContextPath()%>/tools/kmeans-clustering.jsp" target="_blank">K-Means Clustering</a></li>
 			<li><a href="<%=request.getContextPath()%>/tools/neural-network.jsp" target="_blank">Neural Network</a></li>
 			<li><a href="<%=request.getContextPath()%>/tools/time-series-visualization.jsp" target="_blank">Time Series Visualization</a></li>
-			<li><a href="<%=request.getContextPath()%>/tools/baum-welch-hmm.jsp" target="_blank">Baum Welch Hidden Markov Model</a></li>
 			<li><a href="<%=request.getContextPath()%>/tools/random-number-generate.jsp" target="_blank">Random Number Generation</a></li>
 			<li><a href="<%=request.getContextPath()%>/tools/distribution.jsp" target="_blank">Distribution</a></li>
 			<li><a href="<%=request.getContextPath()%>/tools/value-server.jsp" target="_blank">Value Server</a></li>

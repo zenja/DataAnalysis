@@ -18,11 +18,31 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<section id="page-wrapper">
 		
 		<header>
-		<h1>
-		<img id="data-gobble-logo-img" alt="logo" src="<%=request.getContextPath()%>/images/data-gobble-logo.png">
-		DataGobble Analysis System
-		</h1>
+			<h1>
+			<img id="data-gobble-logo-img" alt="logo" src="<%=request.getContextPath()%>/images/data-gobble-logo.png">
+			DataGobble Analysis System
+			</h1>
 		</header>
+		
+		<section>
+			<h2>How to use this tool?</h2>
+			<p>
+				1. Set the observed values, separated by commas. <br>
+				2. Set the expected values, separated by commas. <br>
+				3. Submit the form to get the results.
+			</p>
+			<h2>Case Study</h2>
+			<p>
+				For example, we want to compute a chi-square 
+				statistic measuring the agreement between the observed values: <br>
+				10, 9, 11<br>
+				and the expected values: <br>
+				10.1, 9.8, 10.3 <br>
+				We set the corresponding values and submit the form, 
+				then we get the p-value: 0.9449271775169028
+			</p>
+			<h2>Demo Video</h2>
+		</section>
 		
 		<section class="form-section">
 			<form action="chiSquareTest" method="post">

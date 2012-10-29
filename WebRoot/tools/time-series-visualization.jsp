@@ -24,6 +24,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</h1>
 		</header>
 		
+		<section>
+			<h2>How to use this tool?</h2>
+			<p>
+				1. Upload a file listing the time series data. 
+				We use a XML file to describing the data. 
+				The time series are divided into collections (&lt;TSCollection&gt;). 
+				Each time series has a description, frequency and start year. 
+				The main data of a time series are just a list of values. 
+				Note that all time series in the same collection should have the same length.
+				<br>
+				2. Submit the form to get the charts visualizing the time series. 
+			</p>
+			<h2>Case Study</h2>
+			<p>
+				Test data: <a href="<%=request.getContextPath()%>/download/test-data/time-series-data-example.xml" target="_blank">Download Test Data</a>
+				<br><br>
+				The test data above list many collections of time series. 
+				Upload the file and you can see the visulization of the data. 
+				Different collections are shown in different charts. 
+			</p>
+			<h2>Demo Video</h2>
+			<a href="http://www.youtube.com/watch?v=hFVXxH5sql4&feature=share&list=ULhFVXxH5sql4" target="_blank">View demo</a>
+		</section>
+		
 		<section class="form-section">
 			<form action="timeSeriesVisualization" method="post" enctype="multipart/form-data">
 				<fieldset>
@@ -33,11 +57,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<input type="file" name="file">
 					<br />
 					<input type="submit" value="upload">
-					<p>
-						<a href="<%=request.getContextPath()%>/download/test-data/time-series-data-example.xml" target="_blank">Download Test Data</a>
-						<br>
-						<a href="http://www.youtube.com/watch?v=hFVXxH5sql4&feature=share&list=ULhFVXxH5sql4" target="_blank">View demo</a>
-					</p>
 				</fieldset>
 			</form>
 		</section>

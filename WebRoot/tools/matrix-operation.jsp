@@ -24,6 +24,39 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</h1>
 		</header>
 		
+		<section>
+			<h2>How to use this tool?</h2>
+			<p>
+				1. Set the matrix 1 and matrix 2<br>
+				2. Select a operation type.<br>
+				3. Submit the form to get the results.
+			</p>
+			<h2>Case Study</h2>
+			<p>
+				For example, we want to get the results of product of two matrix: <br>
+				<br>
+				Matrix 1: <br>
+				0 0 0 0 0 1 <br>
+				0 0 0 0 1 0 <br>
+				0 0 0 1 0 0 <br>
+				0 0 1 0 0 0 <br>
+				0 1 0 0 0 0 <br>
+				1 0 0 0 0 0 <br>
+				<br>
+				and Matrix 2: <br>
+				1 2 3 4 5 6 <br>
+				7 8 9 10 11 12 <br>
+				<br>
+				We input the matrices and set the operation type to Multiply, submit the form 
+				and get the results: <br>
+				<br>
+				6.0 5.0 4.0 3.0 2.0 1.0 <br>
+				12.0 11.0 10.0 9.0 8.0 7.0
+			</p>
+			<h2>Demo Video</h2>
+			<a href="http://youtu.be/ZK-iEZQGX4o" target="_blank">View demo</a>
+		</section>
+		
 		<section class="form-section">
 			<form action="matrixOperation" method="post">
 				<fieldset>
@@ -53,9 +86,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</select>
 					<br>
 					<input type="submit" value="submit">
-					<p>
-						<a href="#" target="_blank">View demo</a>
-					</p>
 				</fieldset>
 			</form>
 		</section>

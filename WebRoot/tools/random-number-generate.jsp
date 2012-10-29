@@ -24,6 +24,29 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</h1>
 		</header>
 		
+		<section>
+			<h2>How to use this tool?</h2>
+			<p>
+				1. Select a distribution type;
+				2. Set the parameters of the chosen distribution type;
+				3. Set the number of samples;
+				4. Submit the form to get the generated values.
+			</p>
+			<h2>Case Study</h2>
+			<p>
+				Using this tool we can get a sample of random values 
+				which follow a certain kind of distribution. <br>
+				<br>
+				For example, we want to generate 50 random values which follow the 
+				exponential distribution with the mean value 100. 
+				Select the distribution type of Exponential Distribution, set the mean value to 100 
+				and the number of samples to 50. Submit the form and we can get the 
+				<a href="http://210.75.252.103:8888/DataAnalysis/randomNumberGenerate?inputType=PLAIN_TEXT&distributionType=EXPONENTIAL&numSample=50&exponentialMean=100" target="_blank">results</a>.   
+			</p>
+			<h2>Demo Video</h2>
+			<a href="http://www.youtube.com/watch?v=cowkfBbSnRI&feature=share&list=ULcowkfBbSnRI" target="_blank">View demo</a>
+		</section>
+		
 		<section class="form-section">
 			<form action="randomNumberGenerate" method="post">
 				<fieldset>
@@ -83,10 +106,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</section>
 					
 					<input type="submit" value="submit">
-					
-					<p>
-						<a href="http://www.youtube.com/watch?v=cowkfBbSnRI&feature=share&list=ULcowkfBbSnRI" target="_blank">View demo</a>
-					</p>
 				</fieldset>
 			</form>
 		</section>

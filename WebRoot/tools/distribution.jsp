@@ -18,11 +18,32 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<section id="page-wrapper">
 		
 		<header>
-		<h1>
-		<img id="data-gobble-logo-img" alt="logo" src="<%=request.getContextPath()%>/images/data-gobble-logo.png">
-		DataGobble Analysis System
-		</h1>
+			<h1>
+			<img id="data-gobble-logo-img" alt="logo" src="<%=request.getContextPath()%>/images/data-gobble-logo.png">
+			DataGobble Analysis System
+			</h1>
 		</header>
+		
+		<section>
+			<h2>How to use this tool?</h2>
+			<p>
+				1. Select a distribution type;
+				2. Set the parameters of the distribution;
+				3. Set the value of x which is the value you want to check the probability of;
+				4. Submit the form to see the results.
+			</p>
+			<h2>Case Study</h2>
+			<p>
+				For example, we choose exponential distribution as the distribution type 
+				and set the mean value to 100. Suppose we want to check the probability P(X=95) and 
+				cumulative probability P(X&lt;=95), then we set the value of x to 95 and submit the form. 
+				The <a href="http://210.75.252.103:8888/DataAnalysis/distribution?inputType=PLAIN_TEXT&distributionType=EXPONENTIAL&exponentialMean=100&x=95" target="_blank">results</a> 
+				shows that P(X=95) is 0.0 (because it is a point and the value space is continuous) 
+				and P(X&lt;=95) is 0.6132589765454988.
+			</p>
+			<h2>Demo Video</h2>
+			<a href="http://www.youtube.com/watch?v=miZGB8Y1xDw&feature=share&list=ULmiZGB8Y1xDw" target="_blank">View demo</a>
+		</section>
 		
 		<section class="form-section">
 			<form action="distribution" method="post">
@@ -83,11 +104,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</section>
 					
 					<input type="submit" value="submit">
-					
-					<p>
-						<a href="http://www.youtube.com/watch?v=miZGB8Y1xDw&feature=share&list=ULmiZGB8Y1xDw" target="_blank">View demo</a>
-					</p>
-					
 				</fieldset>
 			</form>
 		</section>
