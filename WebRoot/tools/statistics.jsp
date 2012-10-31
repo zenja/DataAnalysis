@@ -38,6 +38,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				and a chart for the input data, and the statistics, such as the min/max value, mean value, 
 				standard deviation, etc.
 			</p>
+			<h2>Example</h2>
+			<p>
+				The median income of families of USA from 1990-2009 is (yearly income, dollars): <br>
+				35,353 40,611 50,732 56,194 58,407 61,355 61,521 60,088 
+				(<a href="http://www.census.gov/compendia/statab/2012/tables/12s0701.pdf" target="_blank">data source</a>)<br>
+				Suppose we want to find the average income during 1990-2009, 
+				so we make the input file as: <br>
+				<br>
+				35353<br>40611<br>50732<br>56194<br>58407<br>61355<br>61521<br>60088<br>
+				<br>
+				After uploading the file we can get the average income during period 1990-2009 is 53032.625 dollars/year. 
+			</p>
 			<h2>Demo Video</h2>
 			<a href="http://www.youtube.com/watch?v=JfhhZrBnD_4&feature=share&list=PLrlNXTbG3w3cj63Gyfq0IeZCgo5sGpuXe" target="_blank">View demo</a>
 		</section>
