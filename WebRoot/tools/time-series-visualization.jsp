@@ -44,6 +44,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				Upload the file and you can see the visulization of the data. 
 				Different collections are shown in different charts. 
 			</p>
+			<h2>Example</h2>
+			<p>
+				The income statistics of January and February of a company are listed in the series file 
+				<a href="<%=request.getContextPath()%>/download/test-data/examples/time-series-visulization.xml" target="_blank">here</a>
+			</p>
+			<p>
+				Using this tool, we can view the chart of the data: <br>
+				<img alt="example" src="<%=request.getContextPath()%>/images/examples/time-series-visulization.png">				
+			</p>
 			<h2>Demo Video</h2>
 			<a href="http://www.youtube.com/watch?v=hFVXxH5sql4&feature=share&list=ULhFVXxH5sql4" target="_blank">View demo</a>
 		</section>

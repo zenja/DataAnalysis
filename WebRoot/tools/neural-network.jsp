@@ -59,6 +59,44 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<br>
 				We can see that the neural network we created works fine.
 			</p>
+			<h2>Example</h2>
+			<p>
+				We can use neural network to predict the sales of a company. 
+				For example, we have the sales data for 10 days like this: 
+			</p>
+			<table>
+				<tr>
+					<td>Day 1</td>
+					<td>Day 2</td>
+					<td>Day 3</td>
+					<td>Day 4</td>
+					<td>Day 5</td>
+					<td>Day 6</td>
+					<td>Day 7</td>
+					<td>Day 8</td>
+					<td>Day 9</td>
+					<td>Day 10</td>
+				</tr>
+				<tr>
+					<td>1517.66</td>
+					<td>1636.19</td>
+					<td>1588.49</td>
+					<td>1437.20</td>
+					<td>1497.57</td>
+					<td>1520.59</td>
+					<td>1580.21</td>
+					<td>1641.35</td>
+					<td>1360.85</td>
+					<td>1464.26</td>
+				</tr>
+			</table>
+			<p>
+				If we want to make a prediction model for the sales data, 
+				we can make a neural network like 
+				<a href="" target="_blank">this</a>. <br>
+				And the training results is like this: <br>
+				<br>
+			</p>
 			<h2>Demo Video</h2>
 			<a href="http://www.youtube.com/watch?v=hXf7bTR-s5Q&feature=share&list=PLrlNXTbG3w3cj63Gyfq0IeZCgo5sGpuXe" target="_blank">View demo</a>
 		</section>

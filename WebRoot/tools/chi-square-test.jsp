@@ -41,7 +41,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				We set the corresponding values and submit the form, 
 				then we get the p-value: 0.9449271775169028
 			</p>
-			<h2>Demo Video</h2>
+			<h2>Example</h2>
+			<p>
+				A chi-square goodness of fit test allows us to test 
+				whether the observed proportions for a categorical variable 
+				differ from hypothesized proportions. 
+				For example, let's suppose that we believe that 
+				the general population consists of 10% Hispanic, 
+				10% Asian, 10% African American and 70% White folks. 
+				We want to test whether the observed proportions 
+				from our sample differ significantly from these hypothesized proportions. 
+			</p>
+			<p>
+				<img alt="race" src="<%=request.getContextPath()%>/images/examples/chi-square-test-example-race.gif">
+			</p>
+			<p>
+				The results are: <br>
+				<img alt="results" src="<%=request.getContextPath()%>/images/examples/chi-square-test-example-results.png">
+				<br>
+				These results show that racial 
+				composition in our sample does not differ 
+				significantly from the hypothesized values that we supplied
+			</p>
 		</section>
 		
 		<section class="form-section">

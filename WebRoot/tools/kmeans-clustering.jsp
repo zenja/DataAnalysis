@@ -113,7 +113,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				[ 2.0, 1.0, ] <br>
 				Cluster 1: <br>
 				[ 4.0, 3.0, ] <br>
-				[ 5.0, 4.0, ]  <br>
+				[ 5.0, 4.0, ] <br>
 				<br>
 				From the results we can see that Medicine A and B belong to the same group, 
 				and Medicine C and D belong to another group.

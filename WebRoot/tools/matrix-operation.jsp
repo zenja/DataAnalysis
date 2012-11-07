@@ -53,6 +53,58 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				6.0 5.0 4.0 3.0 2.0 1.0 <br>
 				12.0 11.0 10.0 9.0 8.0 7.0
 			</p>
+			<h2>Example</h2>
+			<p>
+				A simples example goes like this. 
+				An Apple store wants to calculate the sales of this mouth, 
+				and they have data like this: 
+			</p>
+			<table border="1">
+				<tr>
+					<th>Product Type</th>
+					<td>ipad mini</td>
+					<td>macbook pro 13' retina</td>
+					<td>ipad 2</td>
+					<td>macbook air</td>
+					<td>imac</td>
+					<td>mac mini</td>
+				</tr>
+				<tr>
+					<th>Price/$</th>
+					<td>329</td>
+					<td>1699</td>
+					<td>399</td>
+					<td>999</td>
+					<td>1299</td>
+					<td>599</td>
+				</tr>
+				<tr>
+					<th>Sales/amount</th>
+					<td>235</td>
+					<td>27</td>
+					<td>12</td>
+					<td>8</td>
+					<td>12</td>
+					<td>3</td>
+				</tr>
+			</table>
+			<p>
+				This problem can be calculated by simply multiply two vectors:<br>
+				<br>
+				[329 1699 399 999 1299 599] <br>
+				<br>
+				and <br>
+				_&nbsp;&nbsp;&nbsp;_<br>
+				|235|<br>
+				|27&nbsp;|<br>
+				|12&nbsp;|<br>
+				|8&nbsp;&nbsp;|<br>
+				|12&nbsp;&nbsp;|<br>
+				|3&nbsp;&nbsp;|<br>
+				-&nbsp;&nbsp;&nbsp;-<br>
+				<br>
+				And the result is: 153353.0. So the shop's income this month is 152253 dollars.
+			</p>
 			<h2>Demo Video</h2>
 			<a href="http://youtu.be/ZK-iEZQGX4o" target="_blank">View demo</a>
 		</section>

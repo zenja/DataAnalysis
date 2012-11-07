@@ -57,6 +57,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<br>
 				Which looks like a exponential distribution with mean value 10. 
 			</p>
+			<h2>Example</h2>
+			<p>
+				Say we want to train a system simulation model with a series of data. 
+				We get some data from real environment, but since it is quite expensive to do so, 
+				the amount of data we get is quite limited. 
+				For the training result be more accurate, we want to feed more data to the simulation model. 
+				Now suppose we know that the input follows a certain distribution, 
+				and we want to use this tool to generate more data. 
+				To do so, we write the collected data to a file, one number per line and upload the file, 
+				then we can get the results.
+			</p>
 			<h2>Demo Video</h2>
 			<a href="http://youtu.be/33UCu-BiL-w" target="_blank">View demo</a>
 		</section>

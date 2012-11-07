@@ -27,9 +27,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<section>
 			<h2>How to use this tool?</h2>
 			<p>
-				1. Select a distribution type;
-				2. Set the parameters of the distribution;
-				3. Set the value of x which is the value you want to check the probability of;
+				1. Select a distribution type; <br>
+				2. Set the parameters of the distribution; <br>
+				3. Set the value of x which is the value you want to check the probability of; <br>
 				4. Submit the form to see the results.
 			</p>
 			<h2>Case Study</h2>

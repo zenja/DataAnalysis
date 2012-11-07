@@ -66,6 +66,43 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				x2 = -0.6<br>
 				<br>
 			</p>
+			<h2>Example</h2>
+			<p>
+				For example, you have to solve a problem like this: <br>
+				<br>
+				You are offered two different sales jobs. Job A offers an annual salary of $30,000
+				plus a year-end bonus of 1% of your total sales. Job B offers an annual salary of
+				$24,000 plus a year-end bonus of 2% of your total sales. <br>
+				<br>
+				a. How much would you have to sell to earn the same amount in each job? <br>
+				b. You believe you can sell between $500,000 and $800,000 of merchandise per
+				year. Which job should you choose? <br>
+				<br>
+				First find a linear system that models the situation: <br>
+				<br>
+				y = 30,000 + 0.01x<br>
+				y = 24,000 + 0.02x<br>
+				<br>
+				First we convert the description to normal form: <br>
+				<br>
+				-0.01x0 + x1 = 30000 <br>
+				-0.02x0 + x1 = 24000 <br>
+				<br>
+				The corresponding input file is: <br>
+				<br>
+				-0.01,1 <br>
+				-0.02,1 <br>
+				 <br>
+				30000,24000 <br>
+				<br>
+				Feed the 
+				<a href="<%=request.getContextPath()%>/download/test-data/examples/solve-linear-system.txt" target="_blank">file</a> 
+				to the system and we can get the results: <br>
+				<br>
+				x0 = 600000.00 <br>
+				x1 = 36000.00 <br>
+				<br>
+			</p>
 			<h2>Demo Video</h2>
 			<a href="http://youtu.be/WB15JB1bxz8" target="_blank">View demo</a>
 		</section>

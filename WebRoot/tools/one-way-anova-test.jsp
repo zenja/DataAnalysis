@@ -46,7 +46,36 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				then we get p-value: 6.9594458853572405E-6 and
 				f-value: 24.67361709460643
 			</p>
-			<h2>Demo Video</h2>
+			<h2>Example</h2>
+			<p>
+				Analysis of Variance (ANOVA) is a hypothesis-testing technique used to test the equality of two
+				or more population (or treatment) means by examining the variances of samples that are taken.
+				ANOVA allows one to determine whether the differences between the samples are simply due to
+				random error (sampling errors) or whether there are systematic treatment effects that causes the
+				mean in one group to differ from the mean in another.
+			</p>
+			<p>
+				Consider this example:
+				Suppose the National Transportation Safety Board (NTSB) wants to examine the safety of
+				compact cars, midsize cars, and full-size cars. It collects a sample of three for each of the
+				treatments (cars types). Using the hypothetical data provided below, test whether the mean
+				pressure applied to the driver’s head during a crash test is equal for each types of car. Use α =
+				5%.
+				<br>
+				<img alt="example" src="<%=request.getContextPath()%>/images/examples/one-way-anova-test-example.png">
+			</p>
+			<p>
+				The input data for this problem are: <br>
+				<br>
+				643, 655, 702<br>
+				469, 427, 525<br>
+				484, 456, 402<br>
+				<br>
+			</p>
+			<p>
+				The corresponding results are: <br>
+				<img alt="results" src="<%=request.getContextPath()%>/images/examples/one-way-anova-test-example-results.png">
+			</p>
 		</section>
 		
 		<section class="form-section">
